@@ -1,6 +1,10 @@
 # CommonLit Readability Price
 
-**NLP competition on Kaggle**: Rate the complexity of literary passages for grades 3-12 classroom use.
+**NLP competition on Kaggle**: Rate the complexity of literary passages for grades 3-12 classroom use. Details instruction can be found [here](https://www.kaggle.com/c/commonlitreadabilityprize).
+
+Input: [train.csv](train.csv). Since url_legal and license will be Null in the [test.csv](test.csv), so the only useful information is the excerpt which contains the text that need to be rate. 
+![image](https://user-images.githubusercontent.com/30295013/127888609-639481f1-7c5b-4823-9275-deb9ebbadcb7.png)
+
 
 First, I did some EDA and tried to use these EDA features to come up with a regression result. Detailed code in [CLRP_no_NN](CLRP_no_NN.ipynb).
 
