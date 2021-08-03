@@ -7,7 +7,7 @@ Input: [train.csv](train.csv). Since url_legal and license will be Null in the [
 ![image](https://user-images.githubusercontent.com/30295013/127888609-639481f1-7c5b-4823-9275-deb9ebbadcb7.png)
 
 ## EDA and Regression on features
-First, I did some EDA and tried to use these EDA features to come up with a regression result. Detailed code in [CLRP_no_NN](CLRP_no_NN.ipynb).
+First, I did some EDA and tried to use these EDA features to come up with a regression result. Detailed code in [CLRP_EDA](CLRP_EDA.ipynb).
 
 This result is pretty bad **(RMSE = 0.944 on Final Score)** which only captures the numerical characteristics of the text.
 
