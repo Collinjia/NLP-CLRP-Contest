@@ -33,7 +33,7 @@ PS:
 ## RoBERTa + XGBRegressor
 Then, inspired by this notebook [clrp-roberta-svm](https://www.kaggle.com/maunish/clrp-roberta-svm), I tried only to use the RoBERTa model as the embedding method and adaan a outside regression model to make the prediction. After trying out several regression methods, I chose the XGBRegressor.  **(RMSE = 0.477 on Final Score)**
     
-PS: The embedding model is using the model trained by others since I didn't have enough GPU time to train another model without the regression head. However, you can get the embedding model by just removing the regression head in the previous mean pooling model. It might reach an even better result since the mean pooling model performs better than the pure attention model in this dataset.
+PS: The embedding model is using the model trained by others [found here](https://www.kaggle.com/maunish/clr-roberta) since I didn't have enough GPU time to train another model without the regression head. However, you can get the embedding model by just removing the regression head in the previous mean pooling model. It might reach an even better result since the mean pooling model performs better than the pure attention model in this dataset.
 
 Then I ensembled these two model and take the average prediction as the result. Detailed Code in [clrp-mp-xgb.ipynb](clrp-mp-xgb.ipynb).  **(RMSE = 0.462 on Final Score, Top 18%)**
 
