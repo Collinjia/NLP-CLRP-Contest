@@ -18,9 +18,17 @@ Then, inspired by these notebooks:
 2)    [Which representations are best?](https://www.kaggle.com/rajat95gupta/mean-pooling-4-seeds)
 3)    [BERT - In Dept Understanding](https://www.kaggle.com/mdfahimreshm/bert-in-depth-understanding)
 
-I used the RoBERTa model to be the word embedding method. Particularly, I used the Mean Pooling Model, which uses the average embedding across max length dimensions in the last hidden layer of RoBERTa. Detailed explanation in  [Utilizing Transformer Representations Efficiently](https://www.kaggle.com/rhtsingh/utilizing-transformer-representations-efficiently). Detailed Code in [CLRP_RoBERTa_Mean_Pooling_Fine_Tuing.ipynb](CLRP_RoBERTa_Mean_Pooling_Fine_Tuing.ipynb).  **(RMSE = 0.465 on Final Score)**
+I used the RoBERTa model to be the word embedding method. Particularly, I used the Mean Pooling Model, which uses the average embedding across max length dimensions in the last hidden layer of RoBERTa. Detailed explanation in  [Utilizing Transformer Representations Efficiently](https://www.kaggle.com/rhtsingh/utilizing-transformer-representations-efficiently). 
 
-PS: It might take several hours to fine-tune this model, reducing the number of seeds, epochs and folds can reduce the tuning time.
+In this model, I used the RoBERTa large model to be the pretrained model to fine tune.
+
+Detailed Code in [CLRP_RoBERTa_Mean_Pooling_Fine_Tuing.ipynb](CLRP_RoBERTa_Mean_Pooling_Fine_Tuing.ipynb).  **(RMSE = 0.465 on Final Score)**
+
+PS: 
+1. You need to download the [RoBERTa large](https://huggingface.co/roberta-large) to do the fine tuning. In kaggle, you can find it [here](https://www.kaggle.com/maroberti/roberta-transformers-pytorch).
+2. You might face the Runtime error shows CUDA out of memory. It means you don't have enough GPU RAM in your local  GPU, probably need around 13G. Try **Kaggle or Google Colab**.
+3. It might take several hours to fine-tune this model, reducing the _number of seeds, epochs and folds_ can reduce the tuning time.
+4. If you use Kaggle, you can use the model [clrp_mp](https://www.kaggle.com/ruoxijia/clrp-mp) that I trained. Just add it as the input dataset.
 
 ## RoBERTa + XGBRegressor
 Then, inspired by this notebook [clrp-roberta-svm](https://www.kaggle.com/maunish/clrp-roberta-svm), I tried only to use the RoBERTa model as the embedding method and adaan a outside regression model to make the prediction. After trying out several regression methods, I chose the XGBRegressor.  **(RMSE = 0.477 on Final Score)**
