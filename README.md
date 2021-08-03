@@ -16,7 +16,7 @@ Then, inspired by these notebooks:
 2)    [Which representations are best?](https://www.kaggle.com/rajat95gupta/mean-pooling-4-seeds)
 3)    [BERT - In Dept Understanding](https://www.kaggle.com/mdfahimreshm/bert-in-depth-understanding)
 
-I used the mean pooling RoBerta
+I used the RoBERTa model to be the word embedding method. Particularly, I used the Mean Pooling Model, which use the average embedding across max length dimensions in the last hidden layer of RoBERTa. Detailed explanation in  [Utilizing Transformer Representations Efficiently](https://www.kaggle.com/rhtsingh/utilizing-transformer-representations-efficiently). Detailed Code in 
 
 
 
