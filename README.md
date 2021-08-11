@@ -40,8 +40,8 @@ Then I ensembled these two model and take the average prediction as the result. 
 ## Top Rating Model
 After the contest, some winners have public their solutions. Following are the links:
 
-1. [1st place solution](https://www.kaggle.com/c/commonlitreadabilityprize/discussion/257844)
-2. [2nd place solution](https://www.kaggle.com/c/commonlitreadabilityprize/discussion/258328)
-3. [4th place solution](https://www.kaggle.com/c/commonlitreadabilityprize/discussion/258148)
+1. [1st place solution](https://www.kaggle.com/c/commonlitreadabilityprize/discussion/257844): Good use of external data
+2. [2nd place solution](https://www.kaggle.com/c/commonlitreadabilityprize/discussion/258328): Interesting weight selection in ensembling.
+3. [4th place solution](https://www.kaggle.com/c/commonlitreadabilityprize/discussion/258148): Averaging different seed during CV
 
 
