@@ -37,5 +37,11 @@ PS: The embedding model is using the [model trained by others](https://www.kaggl
 
 Then I ensembled these two model and take the average prediction as the result. Detailed Code in [clrp-mp-xgb.ipynb](clrp-mp-xgb.ipynb).  **(RMSE = 0.462 on Final Score, Top 18%)**
 
+## Top Rating Model
+After the contest, some winners have public their solutions. Following are the links:
+
+1. [1st place solution](https://www.kaggle.com/c/commonlitreadabilityprize/discussion/257844)
+2. [2nd place solution](https://www.kaggle.com/c/commonlitreadabilityprize/discussion/258328)
+3. [4th place solution](https://www.kaggle.com/c/commonlitreadabilityprize/discussion/258148)
 
 
